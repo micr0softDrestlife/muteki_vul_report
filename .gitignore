@@ -1,0 +1,44 @@
+# 忽略本地研究过程文档：分析、验证步骤和总结不上传到公开仓库
+summary.md
+README_CN.md
+research_ai.md
+muteki_analysis.md
+muteki-hook-validation.md
+*-vul-report-analysis.md
+*analysis*.md
+*validation*.md
+*步骤*.md
+*分析*.md
+
+# 常见本地临时文件
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# 早期验证脚本和本地提示词目录不上传，公开仓库只保留最终 PoC 入口
+vul1.py
+vul2.py
+vul3.py
+prompt/
+1/
+
+# vul1.py 生成的本地验证产物，仓库只保留生成脚本
+poisoned-ctf-src/
+poisoned-ctf-src.tar.gz
+muteki_stage3_payload/
+muteki_stage3_payload.tar.gz
+muteki_stage3_revshell_payload/
+muteki_stage3_revshell_payload.tar.gz
+poisoned-ctf-revshell/
+poisoned-ctf-revshell.tar.gz
+muteki_stage3_readme_payload/
+muteki_stage3_readme_payload_zh/
+muteki_stage3_readme_payload_en/
+poisoned-ctf-readme-zh.tar.gz
+poisoned-ctf-readme-en.tar.gz
+
+# 本地复现用的目标项目源码，不随报告仓库提交
+muteki/
