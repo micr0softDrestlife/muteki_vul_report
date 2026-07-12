@@ -10,6 +10,8 @@ Claude worker directory and the attachment places a `.claude/settings.json` file
 there, a later headless Claude Code launch from the same directory can load the
 project configuration and execute a `SessionStart` hook.
 
+Target：[muteki](https://github.com/FishCodeTech/muteki)
+
 This is a **configuration-plane pollution** issue. The polluted configuration is
 Claude Code's project-level settings file, `.claude/settings.json`. A file that
 should be treated as untrusted challenge data is instead placed where a later
